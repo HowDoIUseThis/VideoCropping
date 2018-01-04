@@ -1,15 +1,17 @@
 # VideoCropping
-A simple video cropping script using openCV. 
+A simple video cropping script using openCV.
 
 ### Controls
-- Click and drag to crop a region 
-- Press 'r' to erase all cropped images on that given frame
-- Hold 'e' to move forward through the video
-- Press 'q' to quit
+- Click and drag to crop a region
+- Press `e` to advance frame
+- Press `q` to quit
+- Press `u` to undo last cropped region
+- Press `r` to reset cropped regions in current frame
 
 ### Example Use
 ```python
-$ python video-crop-roi.py -v /Data/Video/Umaru-chan/Umaru_ed.mkv
+$ pip install -e .
+$ video-crop-roi Umaru_ed.mkv
 ```
 
 ![use case](https://i.imgur.com/eVX4cjJ.jpg)
