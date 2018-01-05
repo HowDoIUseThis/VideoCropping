@@ -103,7 +103,7 @@ def crop_roi(frames, output_path):
 
                 start_x, start_y = start
                 stop_x, stop_y = stop
-                roi = frame[start_y:stop_y, start_x:stop_x]
+                roi = clone[start_y:stop_y, start_x:stop_x]
                 roi_write_buffer.append((
                     os.path.join(
                         output_path,
